@@ -70,4 +70,4 @@ python app.py
 
 Adithyakrishnan P N
 Final Year B.Tech (AI & ML), Marian Engineering College
-GitHub | LinkedIn
+[LinkedIn](https://www.linkedin.com/in/adithyakrishnanpn/)
