@@ -31,7 +31,26 @@ Ensure your webcam is enabled. Alarm triggers on drowsiness.
 
 Files
 
-    app.py – Main script
-    drowsiness_detector.py – Core logic
-    video_handler.py – Webcam input
-    alarm.mp3 – Sound alert
+app.py
+➤ The main entry point of the application.
+It initializes the webcam, runs the drowsiness detection loop, and handles real-time alerts.
+
+data_logger.py
+➤ Handles logging of drowsiness events and relevant metrics.
+Saves data like timestamps, EAR values, and alarm triggers for later analysis.
+
+drowsiness_detector.py
+➤ Contains the core detection logic.
+Calculates Eye Aspect Ratio (EAR) and determines if the driver is drowsy based on a threshold and frame count.
+
+plotter.py
+➤ Utility module to generate plots/graphs from logged data.
+Useful for analyzing driver alertness trends over time.
+
+video_handler.py
+➤ Manages video input from the webcam.
+Provides pre-processed frames for the detection module and handles frame display.
+
+visualization.py
+➤ Provides real-time visual feedback.
+Displays EAR graphs or other live metrics to the screen while the app runs.
