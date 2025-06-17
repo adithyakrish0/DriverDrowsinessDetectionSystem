@@ -35,7 +35,8 @@ cd DriverDrowsinessDetectionSystem
 pip install -r requirements.txt
 
 Ensure your webcam is connected and accessible.
-▶️ Usage
+
+## ▶️ Usage
 
 python app.py
 
@@ -43,7 +44,8 @@ python app.py
 
     When drowsiness is detected based on EAR threshold and frame count, an alarm will play.
 
-📁 File Structure
+## 📁 File Structure
+
 File	Description
 app.py	Main entry point. Runs webcam loop and triggers alert logic.
 data_logger.py	Logs EAR values and drowsiness events with timestamps.
@@ -51,7 +53,8 @@ drowsiness_detector.py	Computes EAR and detects drowsiness from facial landmarks
 video_handler.py	Handles webcam video input and frame processing.
 visualization.py	Provides real-time feedback and EAR graphs.
 plotter.py	Generates analysis plots from logged data.
-🔮 Future Scope
+
+## 🔮 Future Scope
 
     Integration with GPS-based alert system
 
@@ -61,7 +64,7 @@ plotter.py	Generates analysis plots from logged data.
 
     Real-time cloud sync for fleet management use cases
 
-👨‍💻 Developed By
+## 👨‍💻 Developed By
 
 Adithyakrishnan P N
 Final Year B.Tech (AI & ML), Marian Engineering College
