@@ -46,13 +46,15 @@ python app.py
 
 ## 📁 File Structure
 
-File	Description
-app.py	Main entry point. Runs webcam loop and triggers alert logic.
-data_logger.py	Logs EAR values and drowsiness events with timestamps.
-drowsiness_detector.py	Computes EAR and detects drowsiness from facial landmarks.
-video_handler.py	Handles webcam video input and frame processing.
-visualization.py	Provides real-time feedback and EAR graphs.
-plotter.py	Generates analysis plots from logged data.
+| File                     | Description                                                                                                      |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| `app.py`                 | **Main entry point** – Initializes the webcam, runs the real-time detection loop, and handles drowsiness alerts. |
+| `data_logger.py`         | **Data logging module** – Records EAR values, alarm triggers, and timestamps for post-run analysis.              |
+| `drowsiness_detector.py` | **Detection logic** – Calculates the Eye Aspect Ratio (EAR) and determines drowsiness based on thresholds.       |
+| `video_handler.py`       | **Video input handler** – Captures and processes frames from the webcam for analysis.                            |
+| `visualization.py`       | **Live visual feedback** – Displays EAR metrics or graphs in real-time while the system is running.              |
+| `plotter.py`             | **Offline analysis tool** – Generates plots/graphs from logged data to visualize drowsiness trends.              |
+
 
 ## 🔮 Future Scope
 
