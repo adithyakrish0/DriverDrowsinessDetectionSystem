@@ -1,56 +1,66 @@
-# Driver Drowsiness Detection System
+# 🛑 Driver Drowsiness Detection System
 
-A Python project that detects driver drowsiness in real-time using webcam input and eye aspect ratio (EAR) analysis. If drowsiness is detected, an alarm sound is played to alert the driver.
+A real-time Python-based driver drowsiness detection system using Eye Aspect Ratio (EAR) analysis and webcam video feed. Alerts drivers through a sound alarm and logs drowsiness events for further analysis.
 
-## Features
+---
 
-- Real-time video analysis
-- Eye blink detection using EAR
-- Sound alert for drowsiness
-- Basic data logging and visualization
+## 🚀 Features
 
-## Requirements
+- 🎥 Real-time video processing via webcam
+- 👁️ Eye blink and drowsiness detection using Eye Aspect Ratio (EAR)
+- 🔊 Alarm sound triggers on drowsiness detection
+- 📊 Logs EAR values and timestamps for visualization
+- 📈 Graphical analysis of drowsiness trends over time
+
+---
+
+## 📦 Tech Stack
 
 - Python 3.7+
-- opencv-python
+- OpenCV
 - dlib
 - imutils
 - numpy
 - matplotlib
 - pygame
 
-Install using:
+---
 
+## 🛠️ Installation
+
+git clone https://github.com/adithyakrish0/DriverDrowsinessDetectionSystem.git
+cd DriverDrowsinessDetectionSystem
 pip install -r requirements.txt
 
-Usage
+Ensure your webcam is connected and accessible.
+▶️ Usage
 
 python app.py
 
-Ensure your webcam is enabled. Alarm triggers on drowsiness.
+    The system will start your webcam.
 
-Files
+    When drowsiness is detected based on EAR threshold and frame count, an alarm will play.
 
-app.py
-➤ The main entry point of the application.
-It initializes the webcam, runs the drowsiness detection loop, and handles real-time alerts.
+📁 File Structure
+File	Description
+app.py	Main entry point. Runs webcam loop and triggers alert logic.
+data_logger.py	Logs EAR values and drowsiness events with timestamps.
+drowsiness_detector.py	Computes EAR and detects drowsiness from facial landmarks.
+video_handler.py	Handles webcam video input and frame processing.
+visualization.py	Provides real-time feedback and EAR graphs.
+plotter.py	Generates analysis plots from logged data.
+🔮 Future Scope
 
-data_logger.py
-➤ Handles logging of drowsiness events and relevant metrics.
-Saves data like timestamps, EAR values, and alarm triggers for later analysis.
+    Integration with GPS-based alert system
 
-drowsiness_detector.py
-➤ Contains the core detection logic.
-Calculates Eye Aspect Ratio (EAR) and determines if the driver is drowsy based on a threshold and frame count.
+    Dashboard to monitor driver behavior over long drives
 
-plotter.py
-➤ Utility module to generate plots/graphs from logged data.
-Useful for analyzing driver alertness trends over time.
+    Deployable mobile version (via Android + TFLite)
 
-video_handler.py
-➤ Manages video input from the webcam.
-Provides pre-processed frames for the detection module and handles frame display.
+    Real-time cloud sync for fleet management use cases
 
-visualization.py
-➤ Provides real-time visual feedback.
-Displays EAR graphs or other live metrics to the screen while the app runs.
+👨‍💻 Developed By
+
+Adithyakrishnan P N
+Final Year B.Tech (AI & ML), Marian Engineering College
+GitHub | LinkedIn
