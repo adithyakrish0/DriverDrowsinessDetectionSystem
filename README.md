@@ -29,7 +29,9 @@ A real-time Python-based driver drowsiness detection system using Eye Aspect Rat
 ## 🛠️ Installation
 
 git clone https://github.com/adithyakrish0/DriverDrowsinessDetectionSystem.git
+
 cd DriverDrowsinessDetectionSystem
+
 pip install -r requirements.txt
 
 Ensure your webcam is connected and accessible.
